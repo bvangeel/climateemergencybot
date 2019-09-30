@@ -45,7 +45,7 @@ namespace Microsoft.BotBuilderSamples
             if (response != null && response.Length > 0)
             {
                 // This is the place to customize the response
-                await turnContext.SendActivityAsync(MessageFactory.Text("hello" + response[0].Answer), cancellationToken);
+                await turnContext.SendActivityAsync(MessageFactory.Text(response[0].Answer), cancellationToken);
             }
             else
             {
