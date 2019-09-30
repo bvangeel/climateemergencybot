@@ -49,7 +49,7 @@ namespace Microsoft.BotBuilderSamples
             }
             else
             {
-                await turnContext.SendActivityAsync(MessageFactory.Text("No QnA Maker answers were found."), cancellationToken);
+                await turnContext.SendActivityAsync(MessageFactory.Text("Sorry, but I could not find an answer to your question. However your question is stored in my log and an answer will be added asap."), cancellationToken);
             }
         }
 
